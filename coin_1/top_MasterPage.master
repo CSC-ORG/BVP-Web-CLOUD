@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="top_MasterPage.master.cs" Inherits="top_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .s_td{
+
+            width:150px;
+            background-color:#f68314;
+            text-decoration:none;
+            font-family:'Times New Roman';
+            color:black;
+            text-align:center;
+            border-right:2px solid #4b4545;
+            display:block;
+            height:50px;
+            font-size:20px;
+            padding-top:0px;
+
+        }
+.top_link{
+    text-decoration:none;
+    color:black;
+    display:block;
+            margin-top: 0px;
+        }
+
+.top_link:hover{
+    text-decoration:none;
+    color:white;
+    display:block;
+}
+        .s_td:hover{
+            background-color:black;
+            color:white;
+            display:block;
+        }
+
+        #LinkButton1{
+            text-decoration:none;
+            color:black;
+            display:block;
+            background-color:#87BFED;
+            text-align:center;
+            padding-top:5px;
+        }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        function disableRightClick()
+        {
+            alert("Sorry right click disabled !!!");
+            return false;
+        }
+    </script>
+</head>
+<body oncontextmenu="return disableRightClick();">
+    <div id="body">
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <div style="position:absolute; width: 1000px; height: 150px; top: 25px; left: 100px;">
+            <a href="home.aspx" style="text-decoration:none;">
+            <div style="border-style: solid; border-width: 1px; position: absolute; width: 200px; height: 120px; top: 15px; left: 0px; text-align: center;">LOGO</div>
+            </a>
+            <div style="position: absolute; width: 630px; height: 50px; top: 100px; left: 300px">
+                <table style="width: 615px; position:absolute; left:0px;" >
+                    <tr >
+                    <td class="s_td" style="position:absolute; left:0px; border-right:2px solid #FFFFFF;"><a class="top_link" href="#" style="padding-top: 15px; height: 35px"> Doctor Search</a></td>
+                        <td class="s_td" style="position:absolute; left:152px; border-right:2px solid white; "><a class="top_link" href="#" style="padding-top: 15px; height: 35px">Hospital Search</a></td>
+                        <td class="s_td" style="position:absolute; left:304px;"><a class="top_link" href="e_appointment.aspx" style="height: 35px; padding-top: 15px;">E-Appointment</a></td>
+                        <td class="s_td" style="position:absolute; left:456px;"><a class="top_link" href="#" style="padding-top: 15px; height: 35px">E-Policies</a></td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div style="position: absolute; width: 400px; height: 75px; top: 10px; left: 600px">
+&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="login_lable" runat="server" Height="19px" Text="Label" Visible="False"></asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+       </form>
+    </div>
+</body>
+</html>
