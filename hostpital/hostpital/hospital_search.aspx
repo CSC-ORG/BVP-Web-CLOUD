@@ -7,7 +7,7 @@
     <title>Hospital Search</title>
      <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    &nbsp;<style>
+    <style>
  
       html, body{
         height: 100%;
@@ -15,12 +15,11 @@
         padding: 0px
       }
       #map-canvas {
-        height: 100%;
-        margin: 0px;
+        height: 453px;
         padding: 0px;
-        top: 250px;
-        left: 50%;
-        width: 600px;
+       
+       
+        width: 446px;
       }
 
       table {
@@ -379,8 +378,9 @@
         }
 
     </script></head>
-    <body style="margin:0px; padding:0px;" onload="initialize()">
-        <div id="findhospital">
+    <body style="margin:0px; padding:0px;background:url('image/images%20(2).jpg') center no-repeat;background-size:cover" onload="initialize()">
+   
+       <div id="findhospital">
       Find hospitals in:
     </div>
 
@@ -389,8 +389,6 @@
     </div>
     <div id="controls">
       &nbsp;</div>
-
-    <div id="map-canvas"></div>
 
     <div id="listing">
       <table id="resultsTable">
@@ -435,5 +433,9 @@
         <option value="us">U.S.A.</option>
         <option value="uk">United Kingdom</option>
       </select></div>
-</body>
+        </div>
+
+    <div id="map-canvas" draggable="auto" style="top: 30px"></div>
+
+    </body>
 </html>
