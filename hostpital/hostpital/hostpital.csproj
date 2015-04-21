@@ -58,8 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="hospital_search.aspx" />
+    <Content Include="image\Ditch-Google-For-A-Day.png" />
     <Content Include="image\images %282%29.jpg" />
     <Content Include="image\images %283%29.jpg" />
+    <Content Include="image\McLAdXkca.png" />
+    <Content Include="image\searchincon.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

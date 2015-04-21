@@ -12,7 +12,7 @@
       html, body{
         height: 100%;
         margin: 0px;
-        padding: 0px
+        padding: 0px;
       }
       #map-canvas {
         height: 453px;
@@ -29,10 +29,10 @@
       #listing {
         position: absolute;
         width: 200px;
-        height: 470px;
+        height: 450px;
         overflow: auto;
-        left: 41%;
-        top: 88px;
+        left: 42%;
+        top: -2px;
         cursor: pointer;
         overflow-x: hidden;
       }
@@ -44,32 +44,34 @@
         padding: 4px;
         z-index: 5;
         background-color: #fff;
-        top: 94px;
-                                                                  left: 5px;
+        top: 5px;
+                                                                  left: 0px;
                                                               }
       #locationField {
         position: absolute;
         width: 190px;
-        height: 25px;
-        left: 120px;
-        top: 92px;
+        height: 23px;
+        left: 117px;
+        top: 6px;
         z-index: 5;
         background-color: #fff;
       }
       #controls {
-        position: absolute;
-        left: 323px;
+       position:absolute;
+        left: 318px;
         width: 140px;
-        top: 94px;
-        z-index: 5;
+                z-index: 5;
         background-color: #fff;
-      }
+            top: 462px;
+        }
       #autocomplete {
         width: 100%;
         top: 250px;
-      }
+            height: 18px;
+        }
       #country {
         width: 100%;
+        height:23px;
       }
       .placeIcon {
         width: 20px;
@@ -98,6 +100,13 @@
       .table_icon {
         text-align: right;
       }
+                                      
+        .auto-style1
+        {
+            font-weight: bold;
+            text-align: right;
+            height: 18px;
+        }
                                       
     </style><script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false&libraries=places,visualization"></script><script>
         // using the AUTOCOMPLETE FEATURE of the Google Places API.
@@ -380,43 +389,16 @@
     </script></head>
     <body style="margin:0px; padding:0px;background:url('image/images%20(2).jpg') center no-repeat;background-size:cover" onload="initialize()">
    
-       <div id="findhospital">
+       <div id="findhospital" style="top: 461px">
       Find hospitals in:
     </div>
 
-    <div id="locationField">
+    <div id="locationField" style="top: 460px">
       <input id="autocomplete" placeholder="Enter a city" type="text" />
     </div>
-    <div id="controls">
-      &nbsp;</div>
-
-    <div id="listing">
-      <table id="resultsTable">
-        <tbody id="results"></tbody>
-      </table>
-    </div>
-        
-    <div id="info-content">
- <table>
-        <tr id="url-row" class="table_row">
-          <td id="icon" class="table_icon"></td>
-          <td id="url"></td>
-        </tr>
-        <tr id="address-row" class="table_row">
-          <td class="attribute_name"></td>
-          <td id="address"></td>
-        </tr>
-        <tr id="phone-row" class="table_row">
-
-          <td id="phone"></td>
-        </tr>
-        <tr id="website-row" class="table_row">
-          <td class="attribute_name"></td>
-          <td id="website"></td>
-        </tr>
-      </table>
-            <div id="controls">
-      <select id="country" name="D1">
+   
+       <div id="controls">
+        <select id="country" name="D1">
         <option value="all">All</option>
         <option value="au">Australia</option>
         <option value="br">Brazil</option>
@@ -433,9 +415,35 @@
         <option value="us">U.S.A.</option>
         <option value="uk">United Kingdom</option>
       </select></div>
-        </div>
+        <div id="map-canvas"></div>
 
-    <div id="map-canvas" draggable="auto" style="top: 30px"></div>
+        <div id="listing">
+      <table id="resultsTable">
+        <tbody id="results"></tbody>
+      </table>
+    </div>
+
+    <div id="info-content">
+      <table>
+        <tr id="url-row" class="table_row">
+          <td id="icon" class="table_icon"></td>
+          <td id="url"></td>
+        </tr>
+        <tr id="address-row" class="table_row">
+          <td class="attribute_name"></td>
+          <td id="address"></td>
+        </tr>
+        <tr id="phone-row" class="table_row">
+
+          <td id="phone"></td>
+        </tr>
+        <tr id="website-row" class="table_row">
+          <td class="auto-style1"></td>
+          <td id="website" class="table_row"></td>
+        </tr>
+      </table>
+    </div>
+
 
     </body>
 </html>
