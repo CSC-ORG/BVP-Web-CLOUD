@@ -1,0 +1,5 @@
+c:\users\suvarcha\documents\visual studio 2012\Projects\hostpital\hostpital\bin\hostpital.dll
+c:\users\suvarcha\documents\visual studio 2012\Projects\hostpital\hostpital\bin\hostpital.pdb
+c:\users\suvarcha\documents\visual studio 2012\Projects\hostpital\hostpital\obj\Debug\hostpital.csprojResolveAssemblyReference.cache
+c:\users\suvarcha\documents\visual studio 2012\Projects\hostpital\hostpital\obj\Debug\hostpital.dll
+c:\users\suvarcha\documents\visual studio 2012\Projects\hostpital\hostpital\obj\Debug\hostpital.pdb
