@@ -80,7 +80,7 @@ transition: all 0.7s ease;
    <div class="container" style="position:absolute; left:504px;">
    
 <img src="images/icon-appointments-12c5a075e881819944aefb957e1af67f.jpg" alt=""/>
-     <a class="linker" href="/e_appointment.aspx">  
+     <a class="linker" href="e_appointment.aspx">  
  <div class="textbox">
      <p class="text" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic; font-size: 24px; color: #FFFFFF; text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E-Appointment</p>
 </div>

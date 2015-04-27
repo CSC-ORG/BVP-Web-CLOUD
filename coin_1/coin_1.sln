@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "coin_1", "http://localhost:32400", "{0755D3BD-DA24-476A-A8B5-A0DEDF032B21}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
@@ -24,6 +22,46 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "coin_1", "http://localhost:
 		SlnRelativePath = "..\..\WebSites\coin_1\"
 		DefaultWebSiteLanguage = "Visual Basic"
 	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_32400"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\coin_1\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_32400\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_32400"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\coin_1\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_32400\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\..\WebSites\coin_1\"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "coin_1", ".", "{81FE03CF-34DD-44F1-B34C-A31951F5BB3F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/coin_1"
+		Debug.AspNetCompiler.PhysicalPath = "..\coin_1\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\coin_1\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/coin_1"
+		Release.AspNetCompiler.PhysicalPath = "..\coin_1\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\coin_1\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "16090"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +70,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0755D3BD-DA24-476A-A8B5-A0DEDF032B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0755D3BD-DA24-476A-A8B5-A0DEDF032B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81FE03CF-34DD-44F1-B34C-A31951F5BB3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81FE03CF-34DD-44F1-B34C-A31951F5BB3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
